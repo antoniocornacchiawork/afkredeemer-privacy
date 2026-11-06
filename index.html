@@ -78,7 +78,7 @@
 
     <hr>
 
-    <p class="meta"><strong>Effective date:</strong> April 2026</p>
+    <p class="meta"><strong>Effective date:</strong> November 2026</p>
     <p class="meta"><strong>Developer:</strong> AtelierCode</p>
 
     <hr>
@@ -93,26 +93,28 @@
     <p><strong>Data you provide directly:</strong></p>
     <ul>
       <li>Your AFK Arena UID (Classic accounts) — stored locally on your device only, never transmitted to our servers.</li>
-      <li>Your Lilith Games email address (Companion accounts) — used solely to authenticate with Lilith Games' redemption portal during the active session. It is never stored on your device or on our servers.</li>
+      <li>Your Lilith Games email address (email login) — used solely to authenticate with Lilith Games' redemption portal. It is stored locally on your device so you can manage multiple logins and stay signed in, and it is never transmitted to our servers.</li>
+      <li>Lilith Games session tokens — issued by Lilith Games after you log in, stored in your device's secure storage and sent only to Lilith Games, never to our servers.</li>
     </ul>
 
     <p><strong>Data collected automatically:</strong></p>
     <ul>
-      <li>Firebase Analytics: anonymous usage data (app opens, feature usage, crash reports). No personally identifiable information is collected.</li>
+      <li>Firebase Analytics: anonymous usage data (app opens, feature usage, redemption outcomes such as the number of codes redeemed, ad performance, and whether an in-app review prompt was shown). No personally identifiable information is collected.</li>
       <li>Firebase Crashlytics: anonymous crash and error reports to help us improve stability.</li>
-      <li>Firebase Cloud Messaging: a device token is stored on our servers solely for the purpose of sending push notifications about new redemption codes. This token is not linked to any personal identity.</li>
+      <li>Firebase Cloud Messaging: a device token is stored on our servers together with the notification topics you follow, your platform (Android/iOS) and the app version, solely to send push notifications about new redemption codes and app updates. This token is not linked to any personal identity.</li>
     </ul>
 
     <p><strong>Redemption feedback:</strong></p>
     <ul>
       <li>When you redeem a code, the result of the redemption (success, expired, not found) is sent anonymously to our database to help verify codes for the entire community. No account information is included in this data.</li>
+      <li>If you enter a code manually, the code itself may be sent anonymously to our database so it can be verified and shared with the community. No account information is included.</li>
     </ul>
 
     <hr>
 
     <h2>3. Data We Do Not Collect</h2>
     <ul>
-      <li>We do not collect your name, email address, or any personal identity.</li>
+      <li>We do not collect your name, email address, or any personal identity on our servers.</li>
       <li>We do not collect your Lilith Games password. Authentication with Lilith Games' servers happens directly between your device and Lilith Games — AFK Redeemer never sees or stores your password.</li>
       <li>We do not sell, share, or trade any user data with third parties.</li>
       <li>We do not collect payment information. In-app purchases are handled entirely by Google Play.</li>
@@ -133,7 +135,7 @@
 
     <h2>5. Data Retention</h2>
     <ul>
-      <li>Your UID is stored locally on your device and can be removed at any time by logging out or uninstalling the app.</li>
+      <li>Your UID, your Lilith Games email address and your session tokens are stored locally on your device and can be removed at any time by removing the login, logging out or uninstalling the app.</li>
       <li>FCM device tokens are retained on our servers until the token becomes invalid or you uninstall the app.</li>
       <li>Anonymous analytics and crash data are retained according to Firebase's standard retention policies.</li>
     </ul>
